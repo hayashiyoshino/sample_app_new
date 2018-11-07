@@ -1,0 +1,5 @@
+<%= form_for(@tweet) do |f| %>
+<%= f.text_field :content, placeholder: '記事を書く' %>
+<%= f.file_field :image %>
+<%= f.submit 'SEND' %>
+<% end %>

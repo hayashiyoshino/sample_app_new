@@ -1,0 +1,9 @@
+<%= link_to '新規作成', '/tweets/new'%>
+<% @tweets.each do |tweet| %>
+<div class="content">
+  <div class="text">
+    <%= tweet.content %>
+  </div>
+  <%= image_tag tweet.image %>
+</div>.
+<% end %>
